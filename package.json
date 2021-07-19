@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/data.js"
+    "start": "node backend/server.js"
   },
   "author": "",
   "license": "ISC",
