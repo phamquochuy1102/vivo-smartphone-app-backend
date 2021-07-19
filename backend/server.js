@@ -1,7 +1,10 @@
 import express from "express";
 import data from "./data.js";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors()); // Use this after the variable declaration
 
 app.get("/api/products", (req, res) => {
   res.send(data.products);
