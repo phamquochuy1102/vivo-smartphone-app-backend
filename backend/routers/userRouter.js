@@ -7,7 +7,7 @@ import { generateToken } from "../ultils.js";
 
 const userRouter = express.Router();
 
-serRouter.get(
+userRouter.get(
   "/seed",
   expressAsyncHandler(async (req, res) => {
     // await User.remove({});
