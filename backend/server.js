@@ -12,14 +12,21 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// const MONGODB_URL =
+//   "mongodb+srv://huypham:1234@cluster0.jl4o2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
 mongoose.connect(
-  process.env.MONGODB_URL || "mongodb://localhost/vivo-smartphone-app",
+  process.env.MONGODB_URI || "mongodb://localhost/vivo-smartphone-app",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
   }
 );
+
+mongoose.connection.on("connected", () => {
+  console.log("Mongoose is connected!!");
+});
 
 app.use(cors()); // Use this after the variable declaration
 
