@@ -41,6 +41,7 @@ userRouter.post("/register", async (req, res) => {
   });
   const createUser = await user.save();
   res.send({
+    status: true,
     _id: createUser.id,
     name: createUser.name,
     email: createUser.email,
