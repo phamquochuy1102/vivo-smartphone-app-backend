@@ -4,6 +4,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import userRouter from "./routers/userRouter.js";
 import dotenv from "dotenv";
+import orderRouter from "./routers/orderRouter.js";
 
 dotenv.config();
 
@@ -35,6 +36,8 @@ app.get("/api/products", (req, res) => {
 });
 
 app.use("/api/users", userRouter);
+
+app.use("/api/order", orderRouter);
 
 app.get("/", (req, res) => {
   res.send("Server is ready");
