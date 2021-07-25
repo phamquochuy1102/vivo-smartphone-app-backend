@@ -222,7 +222,7 @@ const data = {
     },
     {
       id: 13,
-      image: "./assets/img/s1pro.png",
+      image: "./assets/img/v7+.png",
       name: "Vivo V7+",
       price: 4990000,
       oldPrice: 7990000,
@@ -302,7 +302,7 @@ const data = {
     },
     {
       id: 18,
-      image: "./assets/img/y91.png",
+      image: "./assets/img/y91.jpg",
       name: "Vivo Y91",
       price: 3990000,
       oldPrice: 4490000,
