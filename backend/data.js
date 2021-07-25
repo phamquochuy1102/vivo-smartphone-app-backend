@@ -222,7 +222,7 @@ const data = {
     },
     {
       id: 13,
-      image: "./assets/img/v7+.png",
+      image: "./assets/img/s1pro.png",
       name: "Vivo V7+",
       price: 4990000,
       oldPrice: 7990000,
